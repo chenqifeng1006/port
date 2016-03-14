@@ -10,13 +10,18 @@
     "icon":"glyphicon-bookmark"
   },
   {
-    "name":"气体管理",
-    "jsPath":"air/List",
-    "icon":"glyphicon-bookmark"
-  },
-  {
     "name":"告警管理",
     "jsPath":"remindValue/List",
     "icon":"glyphicon-book"
+  },
+  {
+    "name":"船舶管理",
+    "jsPath":"ship/List",
+    "icon":"glyphicon-file"
+  },
+  {
+    "name":"港口信息",
+    "jsPath":"port/Info",
+    "icon":"glyphicon-off"
   }
 ]
