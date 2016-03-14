@@ -23,7 +23,7 @@
 			COUNT(id)
 		FROM
 			ship
-    </select>
+    </select> 
     
     
      <select id="queryById" parameterType="Integer" resultType="com.cc.admin.dto.Ship">

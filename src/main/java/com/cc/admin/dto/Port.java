@@ -4,7 +4,7 @@ package com.cc.admin.dto;
 public class Port {
 	private int id;
 	
-	private String parkingCount ;
+	private int parkingCount ;
 
 	private int used;
 	
@@ -18,11 +18,13 @@ public class Port {
 		this.id = id;
 	}
 
-	public String getParkingCount() {
+
+
+	public int getParkingCount() {
 		return parkingCount;
 	}
 
-	public void setParkingCount(String parkingCount) {
+	public void setParkingCount(int parkingCount) {
 		this.parkingCount = parkingCount;
 	}
 
