@@ -44,7 +44,7 @@
     
     <insert id="insert" parameterType="com.cc.admin.dto.Ship">
     
-    insert into ship (name,unit,type,hezai) values(#{name},#{unit},#{type},#{hezai});
+    insert into ship (name,unit,type,hezai,status) values(#{name},#{unit},#{type},#{hezai},#{status});
     </insert>
     
     
