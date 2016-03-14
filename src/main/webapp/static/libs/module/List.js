@@ -93,6 +93,9 @@ define([
                 }
             });
         };
+        List.prototype.currentPageRefresh = function(){
+        	this.load();
+        }
         List.prototype.refresh = function(data){
             this.startNum = this._initStartNum;
             this.pageCount = this._initPageCount;

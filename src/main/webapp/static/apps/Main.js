@@ -14,7 +14,7 @@ function (BasePage,Util,Menus,headerTpl,contentTpl) {
         initPage:function(){
             var that = this;
             that._loadMainPage();
-//            that._loadEveryTime();
+            that._loadEveryTime();
             that._bindEvent();
         },
         _loadMainPage:function(){

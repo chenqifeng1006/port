@@ -10,7 +10,7 @@
     <%for(var i = 0; i<data.length; i++){%>
         <tr class="listItem" data-id="<%=data[i].id%>">
             <%for(var j = 0; j<otherData.colModel.length; j++){%>
-            <td>
+            <td class="<%=otherData.colModel[j].className%>">
                 <%if(otherData.colModel[j].fn){%>
                     <%=otherData.colModel[j].fn(data[i])%>
                 <%}else if(otherData.colModel[j].template){%>

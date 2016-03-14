@@ -46,6 +46,7 @@ function (BasePage,Util,List,listTpl) {
                     },
                     {
                         name:'状态',//在岗离岗
+                        className:'shipStatus',
                         index:'status'
                     },
                     {
@@ -63,28 +64,40 @@ function (BasePage,Util,List,listTpl) {
                     {
                         name:'操作',
                         fn:function(data){
-                        	if(data.states === '在港'){
-                        		return '<a class="leave button">离岗</a><a class="edit button">编辑</a><a class="delete button">删除</a>'
+                        	if(data.status === '在港'){
+                        		return '<a class="leave button">离港</a><a class="edit button">编辑</a><a class="delete button">删除</a>'
                         	}else {
-                        		return '<a class="in button">入岗</a><a class="edit button">编辑</a><a class="delete button">删除</a>'
+                        		return '<a class="in button">入港</a><a class="edit button">编辑</a><a class="delete button">删除</a>'
                         	}
                         }
                     }
                 ],
-                url:'setting/test1.json',
+                url:'ship/queryPage',
                 data:{
                     startNum:0,
                     pageCount:10
                 },
                 bindEvent:function(){
                 	$('.leave',that.parent).click(function(e){
-                        var item = that.list.getItemByEventTag(e),
-                        	id = item.id;
+                        var item = that.list.getItemByEventTag(e);
+                        that.post({
+                        	url:'ship/setLeave',
+                        	data:item,
+                        	success:function(){
+                        		that.list.currentPageRefresh();
+                        	}
+                        })
                         
                     });
                 	$('.in',that.parent).click(function(e){
-                		var item = that.list.getItemByEventTag(e),
-                    	id = item.id;
+                		var item = that.list.getItemByEventTag(e);
+                		that.post({
+                        	url:'ship/setBack',
+                        	data:item,
+                        	success:function(){
+                    			that.list.currentPageRefresh();
+                        	}
+                        })
                     });
                     $('.edit',that.parent).click(function(e){
                         var item = that.list.getItemByEventTag(e);

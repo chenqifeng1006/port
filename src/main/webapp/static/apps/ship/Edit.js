@@ -34,7 +34,7 @@ function (BasePage,Util,editTpl) {
                 	type = $('#type').val(),
                 	hezai = $('#hezai').val(),
                     unit = $('#unit').val();
-                if(!humidity || !unit){
+                if(!name || !type || !hezai || !unit){
                     that.alert('信息有误，请重新输入')
                 }else{
                     that.item.name = name;

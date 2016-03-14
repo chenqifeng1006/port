@@ -34,10 +34,8 @@ public class PortController extends BaseController {
 	@RequestMapping(value = "/query", method = RequestMethod.GET)
 	@ResponseBody
 	public JsonObject query() {
-	
-		
-		    Port port=this.portService.query();
-			return new JsonData(port);
+	    Port port= this.portService.query();
+		return new JsonData(port);
 		
 	}
 	

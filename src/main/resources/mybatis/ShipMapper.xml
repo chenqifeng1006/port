@@ -9,7 +9,7 @@
         	FROM 
     		ship
     		
-    		order by status desc
+    		order by id desc
     	
     	LIMIT #{startNum},#{pageCount}
     </select>

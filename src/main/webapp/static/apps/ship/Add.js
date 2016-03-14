@@ -32,7 +32,7 @@ function (BasePage,Util,addTpl) {
                 	status = $('#status').val(),
                 	hezai = $('#hezai').val(),
                     unit = $('#unit').val();
-                if(!humidity || !unit){
+                if(!name || !type || !status || !hezai || !unit){
                     that.alert('信息有误，请重新输入')
                 }else{
                 	that.item = {};
@@ -42,7 +42,7 @@ function (BasePage,Util,addTpl) {
                     that.item.unit = unit;
                     that.item.status = status;
                     that.post({
-                        url:'ship/add',
+                        url:'ship/insert',
                         data:that.item,
                         success:function(){
                             require(['ship/List'],function(Page){
