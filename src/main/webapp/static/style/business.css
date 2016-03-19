@@ -16,7 +16,7 @@
 .login_header{
     height: 80px;
     width:1000px;
-    border-bottom: 1px solid #DBE0E3;
+    border-bottom: 2px solid #68A1C3;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -26,7 +26,7 @@
     height: 80px;
     width:100%;
     border-bottom: 1px solid #DBE0E3;
-    background-color: #00A2C9;
+    background-color: #1C3F47;
     margin: 0 auto;
     color: #f0f0f0;
     position: relative;
@@ -163,11 +163,11 @@
     height: 100%;
     width:220px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-right: 2px solid #DDDDDD;
+    border-right: 2px solid #68A1C3;;
     /*background: #5B73EA;*/
 }
 .left_menus .menus_block{
-    border-bottom: 2px solid #DDDDDD;
+    border-bottom: 2px solid #68A1C3;
 }
 .left_menus .menu_head {
     cursor: pointer;
@@ -177,7 +177,7 @@
     font-variant: normal;
     font-weight: normal;
     text-align: left;
-    color: #858585;
+    color: #A64141;
     outline: none;
     display: block;
     text-decoration: none;
@@ -195,7 +195,7 @@
     top: 11px;;
 }
 .left_menus .menu_head.current{
-    background-color: #00A2C9;
+    background-color: #0D3C47;
     color: #fff;
 }
 .menu_body {
@@ -215,5 +215,22 @@
 .menu_body .sub_menus.current {
     background: #D7CECE;
     color: #00A2C9;
+}
+
+.flex .form-control{
+	border-radius: 0;
+}
+
+.menu_head .left_icon{
+	color:rgb(11, 26, 73);;
+}
+.menu_head.current .left_icon{
+	color:#fff;
+}
+.menu_head .right_icon{
+	color:rgb(11, 26, 73);;
+}
+.menu_head.current .right_icon{
+	color:#fff;
 }
 

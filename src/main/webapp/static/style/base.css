@@ -966,6 +966,10 @@
     width: 80px;
 }
 
+.w100 {
+    width: 100px;
+}
+
 .h20 {
     height: 20px;
 }
@@ -1388,6 +1392,10 @@
     font-size: 15px;
 }
 
+.fs20 {
+    font-size: 20px;
+}
+
 /*背景*/
 .b_red {
     background: red;
@@ -1419,6 +1427,9 @@
 }
 .ml80{
      margin-left:80px;
+ }
+ .ml100{
+     margin-left:100px;
  }
 .ml20{
     margin-left:20px;

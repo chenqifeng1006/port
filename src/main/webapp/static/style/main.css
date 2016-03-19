@@ -3,7 +3,12 @@ html, body ,.page{
     background-color: #fff;
     height: 100%;
     font-family: Helvetica,sans-serif;
-    -webkit-text-size-adjust: none; }
+    -webkit-text-size-adjust: none; 
+    font-size: 25px;}
+    
+table{
+	font-size: 18px;
+}
 
 body {
     background-color: #f0f0f0;
