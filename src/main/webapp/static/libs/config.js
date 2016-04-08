@@ -23,6 +23,7 @@ require.config({
         //cookie
         'cookie'				: '../libs/cookie/jquery.cookie',
         'bootstrap'				: '../libs/bootstrap/js/bootstrap.min',
+        'kendo'					: '../libs/kendo/kendo.all.min',
         'echarts'               : '../libs/echarts/echarts.min',
         'datetimepicker'        : '../libs/datetimepicker/js/bootstrap-datetimepicker.min',
         'datePicker'            : '../libs/My97DatePicker/WdatePicker',
@@ -40,6 +41,13 @@ require.config({
         	     'css!../libs/bootstrap/css/bootstrap.min.css',
         	     'css!../libs/bootstrap/css/bootstrap-theme.min.css'
         	]
+        },
+        kendo:{
+        	deps:[
+        	      'jquery',
+        	      'css!../libs/kendo/kendo.common.min.css',
+        	      'css!../libs/kendo/kendo.default.min.css'
+        	      ]
         },
         datetimepicker:{
         	deps:[

@@ -2,35 +2,36 @@
 
 .header{
     width: 100%;
-    height: 80px;
+    height: 50px;
     position: absolute;
+    background-color: #fff;
     top:0;
     left:0;
+    z-index: 9999;
 }
 .content{
     height: 100%;
     box-sizing: border-box;
-    padding-top: 80px;
+    padding: 60px 10px 10px 10px;
 }
 
 .login_header{
-    height: 80px;
+    height: 50px;
     width:1000px;
-    border-bottom: 2px solid #68A1C3;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
 
 .main_header{
-    height: 80px;
+    height: 50px;
     width:100%;
     border-bottom: 1px solid #DBE0E3;
     background-color: #1C3F47;
     margin: 0 auto;
     color: #f0f0f0;
     position: relative;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 .main_header .log{
     font-family: 微软雅黑, 黑体, sans-serif;
@@ -161,15 +162,17 @@
 /*菜单*/
 .left_menus{
     height: 100%;
-    width:220px;
+    width:188px;
+    font-size: 16px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border-right: 2px solid #68A1C3;;
+    border-right: 2px solid #D8EDCF;
     /*background: #5B73EA;*/
 }
 .left_menus .menus_block{
-    border-bottom: 2px solid #68A1C3;
+    border-bottom: 1px solid #D8EDCF;
 }
 .left_menus .menu_head {
+	
     cursor: pointer;
     font-family: Verdana, sans-serif;
     font-size: 16px;
@@ -177,17 +180,20 @@
     font-variant: normal;
     font-weight: normal;
     text-align: left;
-    color: #A64141;
+    color: #0D1B10;
     outline: none;
     display: block;
     text-decoration: none;
     line-height: 36px;
     padding-left: 32px;
+    padding-left: 24px;
+	  height: 50px;
+	  line-height: 50px;
 }
 .menu_head .right_icon{
     position: absolute;
-    right: 12px;
-    top: 11px;;
+    right: 20px;
+  	top: 17px;
 }
 .menu_head .left_icon{
     position: absolute;
@@ -195,7 +201,7 @@
     top: 11px;;
 }
 .left_menus .menu_head.current{
-    background-color: #0D3C47;
+    background-color: #6EBA4E;
     color: #fff;
 }
 .menu_body {
@@ -228,9 +234,273 @@
 	color:#fff;
 }
 .menu_head .right_icon{
-	color:rgb(11, 26, 73);;
+	color: rgb(171, 242, 141);
 }
 .menu_head.current .right_icon{
 	color:#fff;
 }
 
+
+.loginDiv{
+  top: 240px;
+  right: 10%;
+}
+.loginDiv button{
+margin-top:10px;
+	-webkit-appearance: none;
+-webkit-user-select: none;
+align-items: flex-start;
+background-clip: padding-box;
+background-color: rgb(108, 198, 68);
+background-image: linear-gradient(rgb(123, 204, 88), rgb(96, 184, 56));
+border-bottom-color: rgba(0, 0, 0, 0.247059);
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0.247059);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgba(0, 0, 0, 0.247059);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgba(0, 0, 0, 0.247059);
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+border-top-style: solid;
+border-top-width: 1px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: block;
+font-family: Roboto, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+font-size: 18px;
+font-stretch: normal;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+height: 56px;
+letter-spacing: normal;
+line-height: 27px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+overflow-x: visible;
+overflow-y: visible;
+padding-bottom: 13.5px;
+padding-left: 27px;
+padding-right: 27px;
+padding-top: 13.5px;
+position: relative;
+text-align: center;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: rgba(0, 0, 0, 0.14902) 0px -1px 0px;
+text-transform: none;
+vertical-align: middle;
+white-space: nowrap;
+width: 327.1875px;
+word-spacing: 0px;
+word-wrap: break-word;
+writing-mode: lr-tb;
+-webkit-writing-mode: horizontal-tb;
+margin-top:10px;
+}
+
+.loginDiv input{
+
+-webkit-appearance: none;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+background-clip: padding-box;
+background-color: rgb(255, 255, 255);
+background-position: right 8px top 50%;
+background-repeat: no-repeat;
+border-bottom-color: rgba(0, 0, 0, 0.247059);
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0.247059);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgba(0, 0, 0, 0.247059);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgba(0, 0, 0, 0.247059);
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-style: solid;
+border-top-width: 1px;
+box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 2px 0px inset;
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+cursor: auto;
+display: block;
+font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+font-size: 16px;
+font-stretch: normal;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+height: 44px;
+letter-spacing: normal;
+line-height: 22.3999996185303px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+min-height: 40px;
+outline-color: rgb(51, 51, 51);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+text-align: start;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-transform: none;
+vertical-align: middle;
+width: 327.1875px;
+word-spacing: 0px;
+word-wrap: break-word;
+writing-mode: lr-tb;
+-webkit-writing-mode: horizontal-tb;
+margin-top:10px;
+}
+
+	.lvBtn{
+		-webkit-appearance: none;
+-webkit-user-select: none;
+background-color: rgb(96, 176, 68);
+background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
+border-bottom-color: rgb(92, 169, 65);
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(92, 169, 65);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(92, 169, 65);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(92, 169, 65);
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-style: solid;
+border-top-width: 1px;
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+cursor: pointer;
+display: block;
+float: right;
+font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+height: 34px;
+line-height: 20px;
+padding-bottom: 6px;
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 6px;
+position: relative;
+text-align: left;
+text-decoration: none;
+text-shadow: rgba(0, 0, 0, 0.14902) 0px -1px 0px;
+vertical-align: middle;
+white-space: nowrap;
+width: 69.546875px;
+word-wrap: break-word;
+	}
+	
+	
+	.baiBtn{
+	-webkit-appearance: none;
+-webkit-user-select: none;
+background-color: rgb(238, 238, 238);
+background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
+border-bottom-color: rgb(213, 213, 213);
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(213, 213, 213);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(213, 213, 213);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(213, 213, 213);
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+border-top-style: solid;
+border-top-width: 1px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+cursor: pointer;
+display: block;
+float: right;
+font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+height: 34px;
+line-height: 20px;
+margin-right: 6px;
+padding-bottom: 6px;
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 6px;
+position: relative;
+text-align: left;
+text-decoration: none;
+vertical-align: middle;
+white-space: nowrap;
+width: 65.5625px;
+word-wrap: break-word;
+	}
+	
+a.baiBtn:hover{
+  color: #000;
+  text-decoration: none;
+	
+}
+a.lvBtn:hover{
+	color: #fff;
+  text-decoration: none;
+	
+}	
+
+
+.panel-heading{
+	position: relative;
+}
+	
