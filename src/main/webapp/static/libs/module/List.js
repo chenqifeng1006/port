@@ -92,6 +92,12 @@ define([
                     that.load();
                 }
             });
+            
+            $('#repeat',that.parent).click(function(){
+                that.load();
+            });
+            
+            
         };
         List.prototype.currentPageRefresh = function(){
         	this.load();

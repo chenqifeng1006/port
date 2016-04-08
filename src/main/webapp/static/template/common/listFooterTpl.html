@@ -1,10 +1,19 @@
 
-<nav class="in_block">
-    <ul class="pager m0">
-        <li id="prePage"><a href="javascript:void(0);">前一页</a></li>
-        <li id="nextPage"><a href="javascript:void(0);">下一页</a></li>
-    </ul>
-</nav>
+<div
+	style="display: inline-block; margin-top: 9px; font-size: 14px; margin-left: 12px;">
+	<span id="prePage" class="glyphicon glyphicon-triangle-left"
+		aria-hidden="true"></span>
+	<%=Number(Number(data.total/data.pageCount).toFixed(0)) + 1%> <span
+		id="nextPage" class="glyphicon glyphicon-triangle-right"
+		aria-hidden="true"></span>
+
+</div>
+
 <span class="text">
-    共<%=data.total%>条记录，当前显示第&nbsp;<%=data.startNum + 1%>&nbsp;到第&nbsp;<%=(data.startNum + data.pageCount < data.total)?data.startNum + data.pageCount:data.total%>&nbsp;条记录
-</span>
+	共<%=data.total%>条记录，当前显示第&nbsp;<%=data.startNum +
+	1%>&nbsp;到第&nbsp;<%=(data.startNum + data.pageCount <
+	data.total)?data.startNum + data.pageCount:data.total%>&nbsp;条记录 </span>
+	
+	<span id="repeat" style="right: 20px;
+  top: 12px;" class="glyphicon glyphicon-repeat right" aria-hidden="true"></span>
+	
