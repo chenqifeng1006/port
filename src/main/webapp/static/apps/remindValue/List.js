@@ -43,10 +43,10 @@ function (BasePage,Util,List,listTpl) {
                         name:'警告值',
                         index:'warning'
                     },
-                    {
-                        name:'严重值',
-                        index:'serious'
-                    },
+//                    {
+//                        name:'严重值',
+//                        index:'serious'
+//                    },
                     {
                         name:'操作',
                         template:'<a class="edit button">编辑</a><a class="delete button">删除</a>'

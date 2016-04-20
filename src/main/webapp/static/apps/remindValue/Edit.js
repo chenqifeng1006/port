@@ -33,12 +33,12 @@ function (BasePage,Util,editTpl) {
                 var type = $('#type').val(),
                 	warning = $('#warning').val(),
                 	serious = $('#serious').val();
-                if(!type || !warning || !serious){
+                if(!type || !warning /*|| !serious*/){
                     that.alert('信息有误，请重新输入')
                 }else{
                     that.item.type = type;
                     that.item.warning = warning;
-                    that.item.serious = serious;
+//                    that.item.serious = serious;
                     that.post({
                         url:'remindValue/update',
                         data:that.item,

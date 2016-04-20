@@ -29,14 +29,14 @@ function (BasePage,Util,editTpl) {
             $('#submit').click(function(){
                 var type = $('#type').val(),
                 	warning = $('#warning').val(),
-                	serious = $('#serious').val(),
+//                	serious = $('#serious').val(),
                 	data = {};
-                if(!type || !warning || !serious){
+                if(!type || !warning /*|| !serious*/){
                     that.alert('信息有误，请重新输入')
                 }else{
                 	data.type = type;
                 	data.warning = warning;
-                	data.serious = serious;
+//                	data.serious = serious;
                     that.post({
                         url:'remindValue/save',
                         data:data,

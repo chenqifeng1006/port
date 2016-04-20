@@ -14,7 +14,7 @@
        
    
 
-    <update id="update" parameterType="com.cc.admin.dto.Port">  
+    <update id="update" parameterType="com.cc.admin.dto.House">  
        update House set used=#{used},remained=#{remained} where id=#{id}  
     </update>  
     

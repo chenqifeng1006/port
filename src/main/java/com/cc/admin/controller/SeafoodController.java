@@ -1,6 +1,7 @@
 package com.cc.admin.controller;
 
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.cc.admin.dto.Seafood;
-import com.cc.admin.dto.Ship;
 import com.cc.admin.service.SeafoodService;
-import com.cc.admin.service.ShipService;
 import com.cc.base.BaseController;
 import com.utils.common.PageDTO;
 import com.utils.json.JsonData;
@@ -23,7 +22,7 @@ import com.utils.json.JsonSuccess;
 
 
 @Controller
-@RequestMapping("seafood")
+@RequestMapping("seaFood")
 public class SeafoodController extends BaseController {
 	
 
@@ -68,6 +67,7 @@ public class SeafoodController extends BaseController {
 	public JsonSuccess setOut( Seafood seafood) throws Exception {
 
 		seafood.setStatus("out");
+		seafood.setOuttime(new Date());
 		this.seafoodService.updateStatus(seafood);
 		
 		return new JsonSuccess("设置成功");

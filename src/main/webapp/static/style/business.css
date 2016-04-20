@@ -12,7 +12,18 @@
 .content{
     height: 100%;
     box-sizing: border-box;
-    padding: 60px 10px 10px 10px;
+    padding: 60px 10px 50px 10px;
+    overflow: hidden;
+}
+
+.footer{
+	position: fixed;
+	bottom:0;
+	height:50px;
+	background: #D8EDCF;
+    width: 100%;
+    text-align: center;
+}
 }
 
 .login_header{
@@ -54,6 +65,7 @@
 }
 
 .login_header .title{
+	    padding-right: 10px;
     line-height: 80px;
     margin-left:100px;
     color: rgb(102, 102, 102);
@@ -88,8 +100,12 @@
 }
 
 .right_content{
+	overflow:auto;
     padding:20px 30px 0 30px;
 }
+
+
+
 
 .right_content .list_top{
 	height: 50px;
@@ -129,7 +145,6 @@
     margin: 50px auto;
     width: 80%;
     border: solid 6px #F0F0F0;
-    padding: 40px;
 }
 
 .right_content .form{
@@ -162,7 +177,16 @@
 
 
 
-
+.triangle_border_right{
+    width:0;
+    height:0;
+    border-width:25px 0 25px 25px;
+    border-style:solid;
+    border-color:transparent transparent transparent #6EBA4E;;;/*透明 透明 透明 灰*/
+    position:absolute;
+    top: 0;
+    right: -25px;
+}
 
 
 

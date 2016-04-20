@@ -23,9 +23,11 @@ define([
 //                    }else{
 //                        $(this).find('.right_icon').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-left');
 //                    }
+                	$('.triangle_border_right').hide();
                 	$('.menu_head').removeClass('current');
                 	$('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right')
                     $(this).toggleClass('current');
+                	$(this).next('.triangle_border_right').show();
                 	$(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down')
                     var jsPath = $(this).data('js');	
                     require([jsPath],function(Page){

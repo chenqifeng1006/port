@@ -37,7 +37,7 @@
   
     
     <update id="updateStatus" parameterType="com.cc.admin.dto.Seafood">  
-       update Seafood set  status=#{status} where id=#{id}  
+       update Seafood set  status=#{status},outtime=#{outtime} where id=#{id}  
     </update>  
     
 

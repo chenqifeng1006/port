@@ -9,6 +9,7 @@ function (BasePage,Util,editTpl) {
             var that = this;
             that.parent = options.parent;
             that.item = options.item;
+            that.oldCreateTime = that.item.createtime;
             that.item.createtime = Util.formatDate(new Date(that.item.createtime),'YYYY-MM-DD 00:00')
             that.id = options.item.id;
             BasePage.fn.init.call(that, options);
@@ -38,6 +39,7 @@ function (BasePage,Util,editTpl) {
                 }else{
                     that.item.temperture = temperture;
                     that.item.unit = unit;
+                    that.item.createtime = new Date(that.oldCreateTime);
                     that.post({
                         url:'temperature/update',
                         data:that.item,

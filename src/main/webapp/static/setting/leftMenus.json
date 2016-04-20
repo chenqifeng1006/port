@@ -23,5 +23,15 @@
     "name":"港口信息",
     "jsPath":"port/Info",
     "icon":""
+  },
+  {
+    "name":"货物管理",
+    "jsPath":"seaFood/List",
+    "icon":""
+  },
+  {
+    "name":"仓库信息",
+    "jsPath":"house/Info",
+    "icon":""
   }
 ]
